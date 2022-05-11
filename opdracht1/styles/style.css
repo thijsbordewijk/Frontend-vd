@@ -3,6 +3,7 @@
 /*********/
 /* FONTS */
 /*********/
+
 @font-face {
 	font-family: 'eenfont';
 	src: url('../fonts/eenfont.woff2') format('woff2'),
@@ -12,8 +13,22 @@
 
 }
 
+@font-face {
+	font-family: 'Hurme';
+	src: url('../fonts/hurmeblack.woff2') format('woff2'),
+			 url('../fonts/hurmeblack.woff') format('woff');
+	font-weight: bolder;
+	font-style: normal;
 
+}
 
+@font-face {
+	font-family: 'MM Zaftig';
+	src: url('../fonts/mmzaftig.woff2') format('woff2'),
+			 url('../fonts/mmzaftig.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
 
 
 /**************/
@@ -48,7 +63,7 @@ button, summary {
 /* JOUW STYLING */
 /****************/
 body {
-  font-family:eenfont, sans-serif;
+  font-family: Hurme, sans-serif;
   color:var(--color-text);
   background-color:var(--color-background);
 }
