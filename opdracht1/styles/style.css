@@ -51,7 +51,8 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
+	--color-text:#D91a60;
+	--color-text2:#a61F5E;
 	--color-background:#eee;
 }
 
@@ -62,16 +63,41 @@ button, summary {
 /****************/
 /* JOUW STYLING */
 /****************/
+
+
 body {
   font-family: 'zaftig', sans-serif;
   color:var(--color-text);
   background-color:var(--color-background);
+	font-size: 2em;
+	display: grid;
+	place-items: center;
 }
 
-body > h1:first-child {
-	/* font-family: 'hurme', sans-serif;
-} */
+h1 {
+	width: 5em;
+	aspect-ratio:1/1;
+	background-color: white;
+}
 
+h1 > span:nth-child(6),
+h1 > span:nth-child(7),
+h1 > span:nth-child(8),
+h1 > span:nth-child(9),
+h1 > span:nth-child(10),
+h1 > span:nth-child(11),
+h1 > span:nth-child(12)
+	{
+	font-family: 'hurme', sans-serif;
+	color:var(--color-text2);
+	font-size: .5em;
+	bottom: 20%;
+}
+
+h1 > span:nth-child(0) {
+	position: relative;
+	top: 10px;
+}
 
 
 /* jouw code */
