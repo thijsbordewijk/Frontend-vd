@@ -28,10 +28,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Idee
   <p>Het logo dat ik wil gaan animeren is het logo van Comedyclub Boom Chicago in Amsterdam. Het logo is het volgende:</p>
-  <img src="readme-images/bcLogo" width="375px" alt="Logo Boom Chicago">
+  <img src="readme-images/bcLogo.png" width="375px" alt="Logo Boom Chicago">
 
   <em>Kleuren logo:</em>
-  <img src="readme-images/bcKleuren" width="500px" alt="Kleuren Boom Chicago">
+  <img src="readme-images/bcKleuren.png" width="500px" alt="Kleuren Boom Chicago">
 
 
   ### Je storyboard:
