@@ -14,7 +14,7 @@
 }
 
 @font-face {
-	font-family: 'Hurme';
+	font-family: 'hurme';
 	src: url('../fonts/hurmeblack.woff2') format('woff2'),
 			 url('../fonts/hurmeblack.woff') format('woff');
 	font-weight: bolder;
@@ -63,7 +63,7 @@ button, summary {
 /* JOUW STYLING */
 /****************/
 body {
-  font-family: 'Hurme', sans-serif;
+  font-family: 'hurme', sans-serif;
   color:var(--color-text);
   background-color:var(--color-background);
 }
