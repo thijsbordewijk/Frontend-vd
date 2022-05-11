@@ -23,7 +23,7 @@
 }
 
 @font-face {
-	font-family: 'MM Zaftig';
+	font-family: 'zaftig';
 	src: url('../fonts/mmzaftig.woff2') format('woff2'),
 			 url('../fonts/mmzaftig.woff') format('woff');
 	font-weight: bold;
@@ -63,10 +63,16 @@ button, summary {
 /* JOUW STYLING */
 /****************/
 body {
-  font-family: 'hurme', sans-serif;
+  font-family: 'zaftig', sans-serif;
   color:var(--color-text);
   background-color:var(--color-background);
 }
+
+body > h1:first-child {
+	font-family: 'hurme', sans-serif;
+}
+
+
 
 /* jouw code */
 
