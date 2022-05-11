@@ -63,7 +63,7 @@ button, summary {
 /* JOUW STYLING */
 /****************/
 body {
-  font-family: Hurme, sans-serif;
+  font-family: 'Hurme', sans-serif;
   color:var(--color-text);
   background-color:var(--color-background);
 }
