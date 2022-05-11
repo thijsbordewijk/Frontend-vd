@@ -26,8 +26,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na schetsen idee (voor week 2)</summary>
 
 
+  ### Idee
+  Het logo dat ik wil gaan animeren is het logo van Comedyclub Boom Chicago in Amsterdam. Het logo is het volgende:
+  <img src="readme-images/bcLogo" width="375px" alt="Logo Boom Chicago">
+
+  Kleuren logo:
+  <img src="readme-images/bcKleuren" width="500px" alt="Kleuren Boom Chicago">
+
+
   ### Je storyboard:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="storyboard voor opdracht 1">
+  <img src="readme-images/bcStoryboard.jpg" width="500px" alt="storyboard voor opdracht 1">
 
 
   ### Je ambitie: 
