@@ -80,7 +80,8 @@ body {
 
 h1 {
 	padding:var(--letter-padding);
-	margin-top: 10vw;
+	position: absolute;
+	top: 10vw;
 	background-color:var(--color-background2);		
 	width: 5em;	
 	aspect-ratio: 1/1;
