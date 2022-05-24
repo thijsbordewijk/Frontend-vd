@@ -14,9 +14,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. -bron 1-
-  2. -bron 2-
-  3. -...-
+  1. [-Boom chicago-](https://boomchicago.nl/)
+  2. [-Light & dark mode-](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
+  3. [-Transforms- ](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+  4. [-Animations-](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 
 
 
@@ -40,10 +41,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - custom properties
+  - geen gebruik van margins om elementen te plaatsen
+  - echt verschil tussen light & dark mode
+  - de letters een goede beweging geven om zo een soort 'persoonlijkheid' aan de letter te kunnen geven
  
 </details>
 
