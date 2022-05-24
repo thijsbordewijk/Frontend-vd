@@ -51,9 +51,10 @@ button, summary {
 	/* startje */
 	--color-text:#D91a60;
 	--color-text2:#a61F5E;
-	--style-color3: rgb(75, 74, 74);
+	--style-color3: rgb(54, 54, 54);
 	--color-background:rgb(241, 241, 241);
 	--color-background2:#fff;
+	--color-background3:rgba(255, 255, 255, 0.884);
 	--font1: 'zaftig', sans-serif;
 	--font2: 'hurme', sans-serif;
 	--font-size1: 2em;
@@ -69,7 +70,6 @@ button, summary {
 body {
   font-family:var(--font1);
   color:var(--color-text);
-  background-color:var(--color-background);
 	font-size:var(--font-size1);
 	display: flex;
 	justify-content: center;
@@ -111,6 +111,7 @@ span:nth-child(2):before {
 	content:var(--after-text);
 	font-family:var(--font2);
 	color:var(--style-color3);
+	background-color:var(--color-background2);
 	border:var(--color-background) solid 3px;
 	padding:var(--letter-padding2);
 	border-radius: 100px;
@@ -266,3 +267,21 @@ h1 > span:nth-child(12) {
 }
 
 /****************/
+/* LIGHT & DARK MODE */
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color:var(--style-color3);
+	}
+	h1 {
+		background-color:var(--color-background3);
+	}
+	span:nth-child(2):before {
+		border: none;
+	}
+}
+@media (prefers-color-scheme: light) {
+	body {
+		background-color:var(--color-background);
+	}
+}
