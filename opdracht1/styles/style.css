@@ -10,7 +10,7 @@
 			 url('../fonts/eenfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-
+	font-display: fallback;
 }
 
 @font-face {
@@ -19,7 +19,7 @@
 			 url('../fonts/hurmeblack.woff') format('woff');
 	font-weight: bolder;
 	font-style: normal;
-
+  font-display: fallback;
 }
 
 @font-face {
@@ -28,12 +28,13 @@
 			 url('../fonts/mmzaftig.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
+	font-display: fallback;
 }
-
 
 /**************/
 /* CSS REMEDY */
 /**************/
+
 *, *::after, *::before {
   box-sizing:border-box;  
 }
@@ -42,63 +43,226 @@ button, summary {
 	cursor: pointer;
 }
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
 :root {
 	/* startje */
 	--color-text:#D91a60;
 	--color-text2:#a61F5E;
-	--color-background:#eee;
+	--style-color3: rgb(75, 74, 74);
+	--color-background:rgb(241, 241, 241);
+	--color-background2:#fff;
+	--font1: 'zaftig', sans-serif;
+	--font2: 'hurme', sans-serif;
+	--font-size1: 2em;
+	--font-size2: .61em;
+	--letter-padding: 50px;
+	--letter-padding2: 7px 12px 7px 12px;
+	--after-text: 'COMEDY!';
 }
 
-
-
-
-
 /****************/
-/* JOUW STYLING */
-/****************/
-
+/* GENERAL STYLING */
 
 body {
-  font-family: 'zaftig', sans-serif;
+  font-family:var(--font1);
   color:var(--color-text);
   background-color:var(--color-background);
-	font-size: 2em;
-	display: grid;
-	place-items: center;
+	font-size:var(--font-size1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40vw;
 }
+
+/* CANVAS & 'CROWD' STYLING */
 
 h1 {
-	width: 5em;
-	aspect-ratio:1/1;
-	background-color: white;
+	padding:var(--letter-padding);
+	background-color:var(--color-background2);		
+	width: 5em;	
+	aspect-ratio: 1/1;
+	display: flex;
+	flex-wrap: wrap;	
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
-
-h1 > span:nth-child(6),
-h1 > span:nth-child(7),
-h1 > span:nth-child(8),
-h1 > span:nth-child(9),
-h1 > span:nth-child(10),
-h1 > span:nth-child(11),
-h1 > span:nth-child(12)
-	{
-	font-family: 'hurme', sans-serif;
-	color:var(--color-text2);
-	font-size: .5em;
-	bottom: 20%;
-}
-
-h1 > span:nth-child(0) {
+span {
 	position: relative;
-	top: 10px;
+}
+span:nth-child(3) {
+	margin-top: 2%;
+}
+span:nth-child(5) {
+	display: none;
 }
 
+/* 'COMEDIAN' LETTER & TEXT STYLING */
 
-/* jouw code */
+span:nth-child(2) {
+	margin-top: -2%;
+}
+span:nth-child(2):before {
+	content:var(--after-text);
+	font-family:var(--font2);
+	color:var(--style-color3);
+	border:var(--color-background) solid 3px;
+	padding:var(--letter-padding2);
+	border-radius: 100px;
+	position: absolute;
+	z-index: -1;
+}
 
+/* 'CHICAGO' LETTERS */
+
+span:nth-child(6),
+span:nth-child(7),
+span:nth-child(8),
+span:nth-child(9),
+span:nth-child(10),
+span:nth-child(11),
+span:nth-child(12)
+	{
+	font-family:var(--font2);
+	color:var(--color-text2);
+	font-size:var(--font-size2);
+	margin-top: -7.5%;
+}
+
+/****************/
+/* LOGO ANIMATION */
+
+h1:hover > span:nth-child(1) {
+	animation: b-crowd 5s ease-out infinite;
+}
+h1:hover > span:nth-child(3) {
+	animation: o-crowd 5s ease-out infinite;
+}
+h1:hover > span:nth-child(4) {
+	animation: m-crowd 5s ease-out infinite;
+}
+h1:hover > span:nth-child(2) {
+	animation: comedian 5s ease-out infinite;
+}
+h1:hover > span:nth-child(2):before {
+	animation: comedy 5s ease-out infinite;
+}
+
+h1:hover > span:nth-child(6),
+h1:hover > span:nth-child(7),
+h1:hover > span:nth-child(8),
+h1:hover > span:nth-child(9),
+h1:hover > span:nth-child(10),
+h1:hover > span:nth-child(11),
+h1:hover > span:nth-child(12) {
+	animation: chicago ease-out 5s infinite
+}
+
+/****************/
+/* KEYFRAMES */
+
+@keyframes comedian {
+  0% 		{bottom: -150%;}
+	25%		{bottom: 30%;}
+	37%		{bottom: 30%;}
+	40%		{bottom: 35%;}
+	43%		{bottom: 30%;}
+	75%		{bottom: 30%;}
+	80%		{bottom: 0%;}
+	85%		{transform: scale(100%);}
+	87%		{transform: scale(120%)}
+	90%		{transform: scale(100%);}
+}
+@keyframes comedy {
+	0%		{bottom: 30%;
+				left: 0%;
+				font-size:.01em;
+				opacity: 0;}
+	37%		{bottom: 30%;
+				left: 0%;
+				font-size:.1em;
+				opacity: 0;}
+	40%		{bottom: 60%;
+				left: 65%;
+				font-size:.25em;
+				opacity: 1;}
+	77%		{bottom: 60%;
+				left: 65%;
+				font-size: .25em;
+				opacity: 1;}
+	80%		{bottom: 30%;
+				left: 0%;
+				font-size:.1em;
+				opacity: 0;}
+	100%	{bottom: 30%;
+				left: 0%;
+				font-size:.01em;
+				opacity: 0;}
+}
+
+@keyframes boom {
+	0% 		{bottom: -150%;}
+	70% 	{bottom: 0%;}
+}
+@keyframes b-crowd {
+	0%		{bottom: -150%;}
+	33%		{bottom: 0%;}
+	45%		{bottom: 0%;
+				transform: rotate(0deg);}
+	47%		{transform: rotate(-20deg);}
+	49%		{transform: rotate(0deg);}
+	51%		{transform: rotate(-20deg);}
+	53%		{transform: rotate(0deg);}
+	55%		{transform: rotate(-20deg);}
+	57%		{transform: rotate(0deg);}
+	59%		{transform: rotate(-20deg);}
+	61%		{transform: rotate(0deg);}
+	85%		{transform: scale(100%);}
+	87%		{transform: scale(120%)}
+	90%		{transform: scale(100%);}
+}
+@keyframes o-crowd {
+	0%		{bottom: -150%;}
+	33%		{bottom: 0%;}
+	45%		{bottom: 0%;}
+	47%		{bottom: 10%;}
+	49%		{bottom: 0%;}
+	51%		{bottom: 10%;}
+	53%		{bottom: 0%;}
+	55%		{bottom: 10%;}
+	57%		{bottom: 0%;}
+	59%		{bottom: 10%;}
+	61%		{bottom: 0%;}
+	85%		{transform: scale(100%);}
+	87%		{transform: scale(125%)}
+	90%		{transform: scale(100%);}
+}
+@keyframes m-crowd {
+	0%		{bottom: -150%;}
+	33%		{bottom: 0%;}
+	45%		{bottom: 0%;
+				right: 0%;
+				transform: rotate(0deg);}
+	57%		{right: -75%;
+				transform: rotate(450deg);}
+	80%		{right: 0%;
+				transform: rotate(0deg);}
+	85%		{transform: scale(100%);}
+	87%		{transform: scale(125%)}
+	90%		{transform: scale(100%);}
+}
+@keyframes chicago {
+	0%		{bottom: -140%;}
+	70% 	{bottom: -140%;}
+	80% 	{bottom: 0%;}
+	85%		{font-size: .61em;}
+	87%		{font-size: .68em;}
+	90%		{font-size: .61em;}
+}
+
+/****************/
