@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+**Auteur:** -Thijs Bordewijk-
 
 **De opdrachten:** [opdracht 1](opdracht1/index.html) en [opdracht 2](opdracht2/index.html)
 
@@ -29,14 +29,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Idee
   <p>Het logo dat ik wil gaan animeren is het logo van Comedyclub Boom Chicago in Amsterdam. Het logo is het volgende:</p>
-  <img src="readme-images/bcLogo.png" width="375px" alt="Logo Boom Chicago">
+  <img src="readme-images/bcLogo.png" width="30%px" alt="Logo Boom Chicago">
 
-  Kleuren logo:
-  <img src="readme-images/bcKleuren.png" width="500px" alt="Kleuren Boom Chicago">
+  #### Kleuren logo:
+  <img src="readme-images/bcKleuren.png" width="30%" alt="Kleuren Boom Chicago">
 
 
   ### Je storyboard:
-  <img src="readme-images/bcStoryboard.jpg" width="500px" alt="storyboard voor opdracht 1">
+  <img src="readme-images/bcStoryboard.jpg" width="30%" alt="storyboard voor opdracht 1">
 
 
   ### Je ambitie: 
@@ -57,19 +57,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/screenshot-1.png" width="20%" alt="uitkomst opdracht 1">
+  <img src="readme-images/screenshot-2.png" width="20%" alt="uitkomst opdracht 1">
+  <img src="readme-images/screenshot-3.png" width="20%" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+  Het gebruik van custom properties ging erg goed, ik had ingeschat hier langer voor nodig te hebben maar eigenlijk ging het meteen zoals ik wou dat het ging.
+  
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  <img src="readme-images/code-1.png" width="30%" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  Responsive maken met mix-max of clamps. Ik ben er niet aan toe gekomen dit te doen dus heb ik een iets simpelere oplossing gebruikt, namelijk de positionering van het canvas met vw aangeduid in plaats van px.
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  Ook had ik liever meerdere korte keyframes gebruikt zodat ik de ease-effecten beter had kunnen gebruiken, hier ben ik alleen niet aan toe gekomen dus heb ik langere keyframes gebruikt.
+  
+  <img src="readme-images/code-2.png" width="30%px" alt="bummer">
 </details>
 
 
