@@ -72,7 +72,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit was lastig/Is niet gelukt:
   Responsive maken met mix-max of clamps. Ik ben er niet aan toe gekomen dit te doen dus heb ik een iets simpelere oplossing gebruikt, namelijk de positionering van het canvas met vw aangeduid in plaats van px.
 
-  Ook had ik liever meerdere korte keyframes gebruikt zodat ik de ease-effecten beter had kunnen gebruiken, hier ben ik alleen niet aan toe gekomen dus heb ik langere keyframes gebruikt.
+  Ook had ik liever nog een soort 'spotlight' toegevoegd om de 'o' nog meer een comedian te laten lijken, hier ben ik alleen niet aan toe gekomen
   
   <img src="readme-images/code-2.png" width="30%px" alt="bummer">
 </details>
