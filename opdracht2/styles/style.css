@@ -4,17 +4,37 @@
 /* FONTS */
 /*********/
 @font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
+	font-family: 'regular';
+	src: url('../fonts/cafe.woff') format('woff2'),
+			 url('../fonts/cafe.woff2') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
 }
 
+@font-face {
+	font-family: 'bold';
+	src: url('../fonts/cafe-bold.woff') format('woff2'),
+			 url('../fonts/cafe-bold.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
+@font-face {
+	font-family: 'italic';
+	src: url('../fonts/cafe-italic.woff') format('woff2'),
+			 url('../fonts/cafe-italic.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
-
+@font-face {
+	font-family: 'tonight';
+	src: url('../fonts/tonight.woff2') format('woff2'),
+			 url('../fonts/tonight.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
 /**************/
 /* CSS REMEDY */
@@ -36,8 +56,10 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:#000;
+	--color-background: #fff;
+	--color-background2: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,118,200,1) 100%);
+	--color-background3: #eee;
 }
 
 
@@ -47,11 +69,123 @@ button, summary {
 /****************/
 /* JOUW STYLING */
 /****************/
-body {
-  font-family:eenfont, sans-serif;
-  color:var(--color-text);
-  background-color:var(--color-background);
+
+
+/* header */
+
+body > section:first-of-type {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	grid-column: 1fr;
+	grid-row: 1fr;
+	background: var(--color-background2);
+	min-height: 10vw;
+	width: 100vw;	
+	z-index: 100;
+	left: 0; 
+	top: 0;
+}
+body > section:first-of-type img {
+	position: absolute;
+	top: 2vw;
+	width: 5vw;
+	display: block;
+	opacity: 90%;
 }
 
-/* jouw code */
+/* body */
+
+main {
+	margin-top: 21vw;
+}
+
+body {
+  font-family:regular, sans-serif;
+  color:var(--color-text);
+  background:var(--color-background);
+	text-align: center;
+}
+h1 {
+	top: 5vw;
+	position: relative;
+	font-family: tonight, sans-serif;
+	font-size: 12vw;
+	color: var(--color-background);
+	margin-top: 0vw;
+	margin-bottom: 8vw;
+}
+
+/* movie list */
+
+ul {
+	display: grid;
+	padding: 3vw 10vw 0vw 10vw ;
+	grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+li {
+	list-style: none;
+	margin-bottom: 10vw;
+	background-color: var(--color-background3);
+	margin-right: 3vw;
+	max-width: 100vw ;
+	max-height: 100vw;
+}
+
+li article {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 1fr;
+  grid-template-rows: 6fr 1fr;
+	background: var(--color-background2);
+}
+li article img {
+	width: 100%;
+	padding: 5vw;
+}
+li article h3 {
+	font-family: bold, sans-serif;
+	font-size: 6vw;
+	width: 100%;
+	margin: 0 0 5vw 0;
+	color: var(--color-background);
+
+}
+li p:last-of-type {
+	font-family: italic, sans-serif;
+}
+
+/* footer */
+
+section:last-of-type {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	min-height: 10vw;
+	width: 100vw;
+	box-shadow: 0px 5px 10px rgb(151, 151, 151);
+	background: var(--color-background3);
+	z-index: 1000;
+}
+section:last-of-type > button {
+	position: fixed;
+	bottom: 3vw;
+	right: 5vw;
+	background: var(--color-background2);
+	color: var(--color-background);
+	width: 15vw;
+	height: 15vw;
+	border-radius: 100vw;
+	border: none;
+}
+section:last-of-type > button > i {
+	position: absolute;
+	top: 7.5vw;
+	transform: translate(-50%) translatey(-50%);
+	font-size: 7vw;
+}
+
 

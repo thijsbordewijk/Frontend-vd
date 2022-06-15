@@ -1,21 +1,97 @@
 <!doctype html>
 <html lang="nl">
-	
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Opdracht 2: Interactie galore - Frontend voor Designers</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<title>Movie list - Frontend voor Designers</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 </head>
 
-<body>
-	<h1>Opdracht 2</h1>
+<!-- headertje en paginatitel -->
 
-	<script src="scripts/script.js"></script>
-</body>
-	
+<body>
+	<section>
+		<img src="images/logo.png" alt="logo">
+		<h1>Movies</h1>
+	</section>
+
+<!-- swipelijst -->
+
+<main class="swiper-container">
+<ul class="swiper-wrapper">
+	<li class="swiper-slide">
+		<article>
+			<img src="images/movie-poster.jpg" alt="movie 1">
+			<h3>filmtitel</h3>
+		</article>
+		<p>beschrijving van de film in een kort paragraafje. Gewoon een kort stukje over de plot ofzoiets.</p>
+		<p>IMDB score</p>
+	</li>
+	<li class="swiper-slide">
+		<article>
+			<img src="images/movie-poster.jpg" alt="movie 2">
+			<h3>filmtitel die wat langer is dan anderen</h3>
+		</article>
+		<p>beschrijving van de film in een kort paragraafje. Gewoon een kort stukje over de plot ofzoiets.</p>
+		<p>IMDB score</p>
+	</li>
+	<li class="swiper-slide">
+		<article>
+			<img src="images/movie-poster.jpg" alt="movie 3">
+			<h3>filmtitel</h3>
+		</article>
+		<p>beschrijving van de film in een kort paragraafje. Gewoon een kort stukje over de plot ofzoiets.</p>
+		<p>IMDB score</p>
+	</li>
+	<li class="swiper-slide">
+		<article>
+			<img src="images/movie-poster.jpg" alt="movie 4">
+			<h3>filmtitel</h3>
+		</article>
+		<p>beschrijving van de film in een kort paragraafje. Gewoon een kort stukje over de plot ofzoiets.</p>
+		<p>IMDB score</p>
+	</li>
+	<li class="swiper-slide">
+		<article>
+			<img src="images/movie-poster.jpg" alt="movie 4">
+			<h3>filmtitel</h3>
+		</article>
+		<p>beschrijving van de film in een kort paragraafje. Gewoon een kort stukje over de plot ofzoiets.</p>
+		<p>IMDB score</p>
+	</li>
+	<li class="swiper-slide">
+		<article>
+			<img src="images/movie-poster.jpg" alt="movie 4">
+			<h3>filmtitel</h3>
+		</article>
+		<p>beschrijving van de film in een kort paragraafje. Gewoon een kort stukje over de plot ofzoiets.</p>
+		<p>IMDB score</p>
+	</li>
+</ul>
+</main>
+
+<!-- Favorieten button -->
+
+	<section>
+		<button>
+			<p><</p>
+		</button>
+		<button>
+			<p>></p>
+		</button>
+		<button>
+			<i class="fa-solid fa-heart"></i>
+		</button>
+	</section>	
+
+<!-- scripts -->
+
+	<script src="https://kit.fontawesome.com/8b2c2fb1e6.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="scripts/script.js">	</script>
+
+</body>	
 </html>
