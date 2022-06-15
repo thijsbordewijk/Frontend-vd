@@ -86,15 +86,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je ontwerp:
-  <img src="readme-images/movieStoryboard.jpg" width="375px" alt="ontwerp opdracht 2">
+  <img src="readme-images/movieStoryboard.jpg" width="30%px" alt="Ontwerp opdracht 2">
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik wil met deze opdracht goeie responsiveness hebben in mijn ontwerp. In de vorige opdracht ben ik redelijk rommelig geweest met vw, %, em en px door elkaar te gebruiken. In deze opdracht wil ik zo veel mogelijk vw gebruiken.
+  - Ik wil gaan proberen om met deze opdracht het mogelijk te maken mijn ontwerp te gebruiken met alleen de pijltjestoetsen, als dit niet lukt wil ik in ieder geval het ontwerp mogelijk maken met alleen het toetsenbord.
 </details>
 
 
@@ -109,10 +107,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Ik heb gemerkt dat het scrollen wat rommelig is als er een toetsenbord gebruikt wordt. 
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik heb gemerkt dat mijn ontwerp beter werkt als ik in plaats van een infinite scroll een tinder achtige interactie maak. Zo is het makkelijker te gebruiken met het       toetsenbord, maar ook mobiel is dit een prettigere interactie
+  
+  (tekst en afbeeding(en)).
 
 
 
