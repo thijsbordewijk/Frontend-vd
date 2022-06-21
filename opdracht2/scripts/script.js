@@ -97,7 +97,6 @@ var activeClone = activeFilmName.cloneNode(true);
         favoLijst.appendChild(activeClone); 
         console.log(activeFilmName.textContent);
     };
-   
 };
 
 favoSectionButton.addEventListener("click", function() {

@@ -9,7 +9,6 @@
 			 url('../fonts/cafe.woff2') format('woff');
 	font-weight: normal;
 	font-style: normal;
-
 }
 
 @font-face {
@@ -160,6 +159,7 @@ li button {
 li button i {
 	font-size: 10vw;
 	color: darkblue;
+	animation: heartPound 2s linear
 }
 li p {
 	max-width: 70vw;
@@ -199,6 +199,7 @@ section:last-of-type > button > i {
 	top: 7.5vw;
 	transform: translate(-50%) translatey(-50%);
 	font-size: 7vw;
+	animation: heartPound 2s linear
 }
 section:last-of-type ul {
 	justify-content: center;
@@ -291,13 +292,18 @@ nav {
 		padding-top: 5vw;
 		padding-bottom: 5vw;}
 }
+@keyframes heartPound {
+	0% 		{	font-size: 10vw;}
+	50% 	{	font-size: 10vw;}
+	70%		{	font-size: 10vw;}
+	75%		{ font-size: 8vw;}
+	90% 	{ font-size: 8vw;}
+	100% 	{ font-size: 10vw;}
+}
+
+
 
 /* Mediaqueries */
-
-/* mobile */
-@media only screen and (max-width: 767px) {
-
-}
 
 /* tablet */
 @media only screen and (min-width: 768px) {
@@ -339,7 +345,9 @@ li article {
 	grid-template-rows: 1fr 12vw;
 	max-width: 50vw;
 }
-
+li article h3 {
+	font-size: 5vw;
+}
 li article img {
 	padding: 2vw;
 }
@@ -370,7 +378,9 @@ section:last-of-type > button > i {
 	transform: translate(-50%) translatey(-100%);
 	font-size: 5vw;
 }
-
+.favoUnclicked {
+	height: 110vw;
+}
 }
 
 /* laptop */
@@ -442,6 +452,9 @@ section:last-of-type > button > i {
 	transform: translate(-50%) translatey(-195%);
 	font-size: 3vw;
 }
+.favoUnclicked {
+	height: 60vw;
+}
 }
 
 
@@ -464,7 +477,9 @@ section:last-of-type > button > i {
 		transform: translate(-50%) translatey(-300%);
 		font-size: 2vw;
 	}
-	
+	.favoUnclicked {
+		height: 50vw;
+	}
 	
 	li:first-of-type {
 		animation: none;
