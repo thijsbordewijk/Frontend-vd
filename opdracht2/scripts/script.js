@@ -18,7 +18,7 @@ var options = {
 const swiper = new Swiper('.swiper-container', options);
 // EIND SWIPER JAVASCRIPT
 
-// filter & sort js
+// filter & sort js - werkt niet?
 var options = {
   valueNames: [ 'name' ]
 };
