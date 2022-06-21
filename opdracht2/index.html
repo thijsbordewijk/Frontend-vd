@@ -20,68 +20,88 @@
 
 <!-- swipelijst -->
 
-<main class="swiper-container">
-<ul class="swiper-wrapper">
+<main class="swiper-container" class="films">
+	
+<input class="search" placeholder="Search" />
+
+<ul class="swiper-wrapper" class="list">
 	<li class="swiper-slide">
 		<article>
 			<img src="images/movie-poster.jpg" alt="movie 1">
-			<h3>filmtitel</h3>
+			<h3 class="name">Pulp fiction</h3>
 		</article>
 		<p>beschrijving van de film in een kort paragraafje. Gewoon een kort stukje over de plot ofzoiets.</p>
-		<p>IMDB score</p>
+		<p class="score">8.9/10</p>
+		<button>
+			<i class="fa-solid fa-heart"></i>
+		</button>
 	</li>
 	<li class="swiper-slide">
 		<article>
 			<img src="images/movie-poster.jpg" alt="movie 2">
-			<h3>filmtitel die wat langer is dan anderen</h3>
+			<h3 class="name">Reservoir dogs</h3>
 		</article>
 		<p>beschrijving van de film in een kort paragraafje. Gewoon een kort stukje over de plot ofzoiets.</p>
-		<p>IMDB score</p>
+		<p class="score">8.3/10</p>
+		<button>
+			<i class="fa-solid fa-heart"></i>
+		</button>
 	</li>
 	<li class="swiper-slide">
 		<article>
 			<img src="images/movie-poster.jpg" alt="movie 3">
-			<h3>filmtitel</h3>
+			<h3 class="name">Django Unchained</h3>
 		</article>
 		<p>beschrijving van de film in een kort paragraafje. Gewoon een kort stukje over de plot ofzoiets.</p>
-		<p>IMDB score</p>
+		<p class="score">8.4/10</p>
+		<button>
+			<i class="fa-solid fa-heart"></i>
+		</button>
 	</li>
 	<li class="swiper-slide">
 		<article>
 			<img src="images/movie-poster.jpg" alt="movie 4">
-			<h3>filmtitel</h3>
+			<h3 class="name">The Hateful Eight</h3>
 		</article>
 		<p>beschrijving van de film in een kort paragraafje. Gewoon een kort stukje over de plot ofzoiets.</p>
-		<p>IMDB score</p>
+		<p class="score">7.8/10</p>
+		<button>
+			<i class="fa-solid fa-heart"></i>
+		</button>
 	</li>
 	<li class="swiper-slide">
 		<article>
 			<img src="images/movie-poster.jpg" alt="movie 4">
-			<h3>filmtitel</h3>
+			<h3 class="name">Kill Bill vol. 1</h3>
 		</article>
 		<p>beschrijving van de film in een kort paragraafje. Gewoon een kort stukje over de plot ofzoiets.</p>
-		<p>IMDB score</p>
+		<p class="score">8.2/10</p>
+		<button>
+			<i class="fa-solid fa-heart"></i>
+		</button>
 	</li>
 	<li class="swiper-slide">
 		<article>
 			<img src="images/movie-poster.jpg" alt="movie 4">
-			<h3>filmtitel</h3>
+			<h3 class="name">Kill Bill vol. 2</h3>
 		</article>
 		<p>beschrijving van de film in een kort paragraafje. Gewoon een kort stukje over de plot ofzoiets.</p>
-		<p>IMDB score</p>
+		<p class="score">8.0/10</p>
+		<button>
+			<i class="fa-solid fa-heart"></i>
+		</button>
 	</li>
 </ul>
 </main>
 
-<!-- Favorieten button -->
+<!-- Favorieten section -->
 
 	<section>
-		<button>
-			<p><</p>
-		</button>
-		<button>
-			<p>></p>
-		</button>
+		<article>
+			<i class="fa-solid fa-heart"></i>	
+			<h3>Favoriete films</h3>		
+			<ul></ul>
+		</article>
 		<button>
 			<i class="fa-solid fa-heart"></i>
 		</button>
@@ -89,9 +109,11 @@
 
 <!-- scripts -->
 
-	<script src="https://kit.fontawesome.com/8b2c2fb1e6.js" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script src="scripts/script.js">	</script>
+	<script type="text/javascript" src="scripts/list.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+	<script type="text/javascript" src="https://kit.fontawesome.com/8b2c2fb1e6.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js">	</script>
 
 </body>	
 </html>
