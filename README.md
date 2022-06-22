@@ -117,15 +117,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Het idee om de hele app met het toetsenbord te gebruiken lukt niet helemaal.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik heb met de pijltjestoetsen de meeste interacties mogelijk gemaakt. Op bepaalde plekken is dit echter nog wat rommelig, maar ik weet neit hoe ik dit kan oplossen.
 
-
-
-  ### Bevinding 3:
-  ...
 </details>
 
 
@@ -136,17 +132,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken bij afronden opdracht (voor week 8)</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/screenshot1.png" width="375px" alt="uitkomst opdracht 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+ Ik heb goed gebruik gemaakt van grid en ben blij dat ik het opslaan van verschillende films wel succesvol heb kunnen maken.
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  <img src="readme-images/screenshot 2.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+Ik heb het sorteren/filteren niet voor elkaar gekregen, dit werkte maar neit, ik heb dit erg vaak geprobeerd.
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  <img src="readme-images/screenshot 3.png" width="375px" alt="bummer">
 </details>
